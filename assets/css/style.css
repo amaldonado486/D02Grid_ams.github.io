@@ -1,0 +1,102 @@
+.navbar{
+    grid-area: nav;
+    background-color: blue;
+    /* height: 5vh; */
+    align-content: center;
+    justify-content: center;
+    text-align: center; */
+}
+menu{
+    grid-area: menu;
+    width: 25%;
+    /* height: 100vh; */
+    display: flex;   
+}
+aside{
+    background-color: rgba(182, 230, 233, 0.971);
+}
+aside li{
+    list-style: none;
+
+}
+main{
+    grid-area: main;
+    background-color: rgba(182, 230, 233, 0.971);
+    /* height: 90%; */
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas:
+        "p1 p2 p3"
+        "p4     ";
+        gap: 5px;
+        grid-template-columns: 25% 25% 25%;
+}
+footer{
+    grid-area: footer;
+    background-color: blue;
+
+    /* height: 5vh; */
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.texto{
+    text-align: center;
+}
+
+.grid-container{
+        display: grid;
+        grid-template-areas:
+        "nav nav"
+        "menu main"
+        "footer footer";
+        gap: 10px;
+        grid-template-columns: 20% auto;
+        height: 100vh;
+        gap: 2px;
+}
+
+.lista{
+    font-size: 14px;
+    height: 10%;
+    padding: 2px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px gray;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-height: 300px;
+    
+}    
+.box img{
+    width: 80%;
+    min-width: 30%;
+    max-height: 30%; 
+    align-content: center;
+    
+}
+.box-action{
+    background-color: blue;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    font-family: 'roboto-regular';
+    font-size: 12px;
+    
+}
+
+.roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
